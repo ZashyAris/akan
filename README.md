@@ -1,0 +1,6 @@
+# THE AKAN NAMING SYSTEM
+## Made by: Sharon Atieno Auma
+## contacts: +254793933082
+## Description
+ The website is about a Ghanian naming system where a child is given a name  according to he day they are born in.
+ 
