@@ -19,7 +19,13 @@ function getDayOfWeek(dd, mm, yyyy) {
   //   Calculate day of week from specific date
   var dayOfWeek =
     (day +
-      parseInt(2.6 * (month + 1) + yearCode + parseInt(yearCode / 4) + parseInt(centuryCode / 4) + 5 * centuryCode)) %
+      parseInt(
+        2.6 * (month + 1) +
+          yearCode +
+          parseInt(yearCode / 4) +
+          parseInt(centuryCode / 4) +
+          5 * centuryCode
+      )) %
     7;
 
   // dayOfWeek = (0=Saturday, 1=Sunday, 2=Monday, ...6=Friday)
