@@ -10,4 +10,4 @@
 ## This is the link to the website access
  https://zashyaris.github.io/akan/ 
  ##  License
- Licensed under the <a href="MIT license.">
+ Licensed under the <a href="https://choosealicense.com/licenses/mit/">
