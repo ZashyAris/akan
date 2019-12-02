@@ -1,43 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <style>
+      body{
+        background-color: crimson;
+        font-size: 24px;
+                */
+      h2{
+        font-size: 34px;
+      }
+    </style>
+  </head>
 
-<body>
-
+  <body>
     <div class="card" class="text-center" style="width: 50%; padding: 3%; text-align: center; margin-left: 30%;">
-        <div class="card-body">
-            <h2 class="card-title">THE AKAN NAMING SYSTEM</h2>
-            <p class="card-text">The Akan people from Ghana normally give their children Akan names.The names are given
-                to the children considering the day of the week that they were born in.</p>
-            <p class="card-text">Let's find out what is your Akan name.</p>
-            <form action="/action.page.php" method="get">
-                Century<br>
-                <input type="number" name="Century" placeholder="Enter the Century" id="century"><br>
-                Year<br>
-                <input type="number" name="Year" placeholder="Enter the Year" id="year"><br>
-                Month<br>
-                <input type="number" name="Month" placeholder="Enter the Month" id="month"><br>
-                Date<br>
-                <input type="number" name="Date" placeholder="Enter the date" id="date"><br>
+      <div class="card-body">
+        <h2 class="card-title"><strong>THE AKAN NAMING SYSTEM</strong></h2>
+        <p class="card-text">
+          The Akan people from Ghana normally give their children Akan names.The names are given to the children
+          considering the day of the week that they were born in.
+        </p>
+        <p class="card-text">Let's find out what is your Akan name.</p>
+        <form action="#">
+          Year<br />
+          <input type="number" name="Year" placeholder="Enter the Year" id="year" /><br />
+          Month<br />
+          <input type="number" name="Month" placeholder="Enter the Month" id="month" /><br />
+          Date<br />
+          <input type="number" name="Date" placeholder="Enter the date" id="date" /><br />
+          <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
 
-                <input type="checkbox" name="gender" value="female">Female
-                <input type="checkbox" name="gender" value="male">Male<br>
-
-                <input type="button" id="calculate the birthday" value="Calculate The Birthday"
-                    onclick="checkbirthday()">
-            </form>
-            <script type="text/javascript"></script>
-        </div>
+          <!-- <input type="button" id="calculate the birthday" value="Calculate The Birthday" /> -->
+          <button type="submit" onclick="getAkanName()">Calculate The Birthday</button>
+        </form>
+      </div>
     </div>
-
-</body>
-
+  </body>
+  <script src="scripts.js"></script>
 </html>
